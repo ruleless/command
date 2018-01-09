@@ -4,14 +4,14 @@
 #include "command_factory.h"
 
 class FakeCommand : public Command
-{    
+{
   public:
     COMMAND_DECLARATION(FakeCommand);
-    
+
     FakeCommand(CommandFactory *factory)
             :Command(factory)
     {}
-    
+
     virtual ~FakeCommand() {}
 
     virtual const char *desc() const
